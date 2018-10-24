@@ -21,3 +21,15 @@ Auth::routes();
 Route::get('/home', 'HomeController@index');
 
 Route::resource('configurations', 'ConfigurationController');
+
+Route::resource('people', 'PersonController');
+
+Route::resource('students', 'StudentController');
+
+Route::resource('tutors', 'TutorController');
+
+Route::resource('inscriptions', 'InscriptionController');
+
+Route::resource('companies', 'CompanyController');
+
+Route::resource('downloadables', 'DownloadableController');

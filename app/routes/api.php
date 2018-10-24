@@ -19,3 +19,15 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 
 
 Route::resource('configurations', 'ConfigurationAPIController');
+
+Route::resource('people', 'PersonAPIController');
+
+Route::resource('students', 'StudentAPIController');
+
+Route::resource('tutors', 'TutorAPIController');
+
+Route::resource('inscriptions', 'InscriptionAPIController');
+
+Route::resource('companies', 'CompanyAPIController');
+
+Route::resource('downloadables', 'DownloadableAPIController');

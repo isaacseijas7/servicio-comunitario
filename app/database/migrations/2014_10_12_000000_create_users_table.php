@@ -17,9 +17,12 @@ class CreateUsersTable extends Migration
             $table->increments('id');
             $table->string('name');
             $table->string('email')->unique();
+            $table->enum('rol', ['admin', 'user', 'tutor'])->default('user');
+            $table->enum('status', ['active', 'deactivated'])->default('active');
             $table->timestamp('email_verified_at')->nullable();
             $table->string('password');
             $table->rememberToken();
+            $table->string('image')->default('default.png');
             $table->timestamps();
         });
     }

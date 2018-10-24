@@ -81,7 +81,7 @@ class Configuration extends Model
         'date_fin_community_service' => 'required',
         'coordinator_full_name' => 'required',
         'coordinator_identification' => 'required',
-        //'status' => 'required'
+        'status' => 'required'
     ];
 
     

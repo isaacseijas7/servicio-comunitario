@@ -1,0 +1,15 @@
+
+phone string text
+
+required
+
+
+
+type string text
+skills_and_abilites string text
+knowledge string text
+user_id integer:unsigned:foreign,users,id
+
+student_id integer:unsigned:foreign,students,id
+
+configuration_id integer:unsigned:foreign,configurations,id
