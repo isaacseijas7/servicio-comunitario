@@ -4,9 +4,193 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "ee6b1c217f545ade340d40c8db3ed894",
-    "content-hash": "15c0341be2b5b3d72e995e965a00d042",
+    "hash": "a4a28f8706eaed6db5f0a1c0c2947424",
+    "content-hash": "93921ac368c0336134932ef8c6b2e451",
     "packages": [
+        {
+            "name": "barryvdh/laravel-dompdf",
+            "version": "v0.8.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/barryvdh/laravel-dompdf.git",
+                "reference": "46781d0304277845a19c09c169bc595fd182cce4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/barryvdh/laravel-dompdf/zipball/46781d0304277845a19c09c169bc595fd182cce4",
+                "reference": "46781d0304277845a19c09c169bc595fd182cce4",
+                "shasum": ""
+            },
+            "require": {
+                "dompdf/dompdf": "^0.8",
+                "illuminate/support": "5.5.x|5.6.x|5.7.x",
+                "php": ">=7"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "0.8-dev"
+                },
+                "laravel": {
+                    "providers": [
+                        "Barryvdh\\DomPDF\\ServiceProvider"
+                    ],
+                    "aliases": {
+                        "PDF": "Barryvdh\\DomPDF\\Facade"
+                    }
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Barryvdh\\DomPDF\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Barry vd. Heuvel",
+                    "email": "barryvdh@gmail.com"
+                }
+            ],
+            "description": "A DOMPDF Wrapper for Laravel",
+            "keywords": [
+                "dompdf",
+                "laravel",
+                "pdf"
+            ],
+            "time": "2018-08-31 13:25:44"
+        },
+        {
+            "name": "cocur/slugify",
+            "version": "v3.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/cocur/slugify.git",
+                "reference": "b2ccf7b735f4f3df3979aef2e1ebf8e19ca772f7"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/cocur/slugify/zipball/b2ccf7b735f4f3df3979aef2e1ebf8e19ca772f7",
+                "reference": "b2ccf7b735f4f3df3979aef2e1ebf8e19ca772f7",
+                "shasum": ""
+            },
+            "require": {
+                "ext-mbstring": "*",
+                "php": ">=5.5.9"
+            },
+            "require-dev": {
+                "laravel/framework": "~5.1",
+                "latte/latte": "~2.2",
+                "league/container": "^2.2.0",
+                "mikey179/vfsstream": "~1.6",
+                "mockery/mockery": "~0.9",
+                "nette/di": "~2.2",
+                "phpunit/phpunit": "~4.8|~5.2",
+                "pimple/pimple": "~1.1",
+                "plumphp/plum": "~0.1",
+                "silex/silex": "~1.3",
+                "symfony/config": "~2.4|~3.0",
+                "symfony/dependency-injection": "~2.4|~3.0",
+                "symfony/http-kernel": "~2.4|~3.0",
+                "twig/twig": "~1.26|~2.0",
+                "zendframework/zend-modulemanager": "~2.2",
+                "zendframework/zend-servicemanager": "~2.2",
+                "zendframework/zend-view": "~2.2"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Cocur\\Slugify\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Ivo Bathke",
+                    "email": "ivo.bathke@gmail.com"
+                },
+                {
+                    "name": "Florian Eckerstorfer",
+                    "email": "florian@eckerstorfer.co",
+                    "homepage": "https://florian.ec"
+                }
+            ],
+            "description": "Converts a string into a slug.",
+            "keywords": [
+                "slug",
+                "slugify"
+            ],
+            "time": "2018-01-22 09:00:48"
+        },
+        {
+            "name": "cviebrock/eloquent-sluggable",
+            "version": "4.6.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/cviebrock/eloquent-sluggable.git",
+                "reference": "d8a6982d32a7fe92f42b1c33a34e89d33516c2fd"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/cviebrock/eloquent-sluggable/zipball/d8a6982d32a7fe92f42b1c33a34e89d33516c2fd",
+                "reference": "d8a6982d32a7fe92f42b1c33a34e89d33516c2fd",
+                "shasum": ""
+            },
+            "require": {
+                "cocur/slugify": "^3.1",
+                "illuminate/config": "~5.7.0",
+                "illuminate/database": "~5.7.0",
+                "illuminate/support": "~5.7.0",
+                "php": "^7.0"
+            },
+            "require-dev": {
+                "limedeck/phpunit-detailed-printer": "^4.1",
+                "mockery/mockery": "^0.9.4",
+                "orchestra/database": "3.7.x-dev",
+                "orchestra/testbench": "v3.7.0",
+                "phpunit/phpunit": "~7.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Cviebrock\\EloquentSluggable\\ServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Cviebrock\\EloquentSluggable\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Colin Viebrock",
+                    "email": "colin@viebrock.ca"
+                }
+            ],
+            "description": "Easy creation of slugs for your Eloquent models in Laravel 5.",
+            "homepage": "https://github.com/cviebrock/eloquent-sluggable",
+            "keywords": [
+                "eloquent",
+                "eloquent-sluggable",
+                "laravel",
+                "lumen",
+                "slug",
+                "sluggable"
+            ],
+            "time": "2018-09-05 02:03:48"
+        },
         {
             "name": "dnoegel/php-xdg-base-dir",
             "version": "0.1",
@@ -456,6 +640,68 @@
                 "parser"
             ],
             "time": "2014-09-09 13:34:57"
+        },
+        {
+            "name": "dompdf/dompdf",
+            "version": "v0.8.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/dompdf/dompdf.git",
+                "reference": "5113accd9ae5d466077cce5208dcf3fb871bf8f6"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/dompdf/dompdf/zipball/5113accd9ae5d466077cce5208dcf3fb871bf8f6",
+                "reference": "5113accd9ae5d466077cce5208dcf3fb871bf8f6",
+                "shasum": ""
+            },
+            "require": {
+                "ext-dom": "*",
+                "ext-gd": "*",
+                "ext-mbstring": "*",
+                "phenx/php-font-lib": "0.5.*",
+                "phenx/php-svg-lib": "0.3.*",
+                "php": ">=5.4.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "4.8.*",
+                "squizlabs/php_codesniffer": "2.*"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-develop": "0.7-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Dompdf\\": "src/"
+                },
+                "classmap": [
+                    "lib/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "LGPL-2.1"
+            ],
+            "authors": [
+                {
+                    "name": "Fabien Ménager",
+                    "email": "fabien.menager@gmail.com"
+                },
+                {
+                    "name": "Brian Sweeney",
+                    "email": "eclecticgeek@gmail.com"
+                },
+                {
+                    "name": "Gabriel Bull",
+                    "email": "me@gabrielbull.com"
+                }
+            ],
+            "description": "DOMPDF is a CSS 2.1 compliant HTML to PDF converter",
+            "homepage": "https://github.com/dompdf/dompdf",
+            "time": "2017-11-26 14:49:08"
         },
         {
             "name": "dragonmantank/cron-expression",
@@ -1362,6 +1608,231 @@
             "time": "2018-10-15 13:53:10"
         },
         {
+            "name": "league/fractal",
+            "version": "0.17.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/thephpleague/fractal.git",
+                "reference": "a0b350824f22fc2fdde2500ce9d6851a3f275b0e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/thephpleague/fractal/zipball/a0b350824f22fc2fdde2500ce9d6851a3f275b0e",
+                "reference": "a0b350824f22fc2fdde2500ce9d6851a3f275b0e",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.4"
+            },
+            "require-dev": {
+                "doctrine/orm": "^2.5",
+                "illuminate/contracts": "~5.0",
+                "mockery/mockery": "~0.9",
+                "pagerfanta/pagerfanta": "~1.0.0",
+                "phpunit/phpunit": "~4.0",
+                "squizlabs/php_codesniffer": "~1.5",
+                "zendframework/zend-paginator": "~2.3"
+            },
+            "suggest": {
+                "illuminate/pagination": "The Illuminate Pagination component.",
+                "pagerfanta/pagerfanta": "Pagerfanta Paginator",
+                "zendframework/zend-paginator": "Zend Framework Paginator"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "0.13-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "League\\Fractal\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Phil Sturgeon",
+                    "email": "me@philsturgeon.uk",
+                    "homepage": "http://philsturgeon.uk/",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Handle the output of complex data structures ready for API output.",
+            "homepage": "http://fractal.thephpleague.com/",
+            "keywords": [
+                "api",
+                "json",
+                "league",
+                "rest"
+            ],
+            "time": "2017-06-12 11:04:56"
+        },
+        {
+            "name": "maatwebsite/excel",
+            "version": "3.1.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Maatwebsite/Laravel-Excel.git",
+                "reference": "a80179c3f33d06fc0d7f22891d6aae4bb083f8c3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Maatwebsite/Laravel-Excel/zipball/a80179c3f33d06fc0d7f22891d6aae4bb083f8c3",
+                "reference": "a80179c3f33d06fc0d7f22891d6aae4bb083f8c3",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/support": "5.5.* || 5.6.* || 5.7.*",
+                "php": "^7.0",
+                "phpoffice/phpspreadsheet": "^1.4"
+            },
+            "require-dev": {
+                "mockery/mockery": "^1.1",
+                "orchestra/database": "^3.6",
+                "orchestra/testbench": "^3.6",
+                "phpunit/phpunit": "^7.0",
+                "predis/predis": "^1.1"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Maatwebsite\\Excel\\ExcelServiceProvider"
+                    ],
+                    "aliases": {
+                        "Excel": "Maatwebsite\\Excel\\Facades\\Excel"
+                    }
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Maatwebsite\\Excel\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Patrick Brouwers",
+                    "email": "patrick@maatwebsite.nl"
+                }
+            ],
+            "description": "Supercharged Excel exports and imports in Laravel",
+            "keywords": [
+                "PHPExcel",
+                "batch",
+                "csv",
+                "excel",
+                "export",
+                "import",
+                "laravel",
+                "php",
+                "phpspreadsheet"
+            ],
+            "time": "2018-10-11 09:21:58"
+        },
+        {
+            "name": "markbaker/complex",
+            "version": "1.4.7",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/MarkBaker/PHPComplex.git",
+                "reference": "1ea674a8308baf547cbcbd30c5fcd6d301b7c000"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/MarkBaker/PHPComplex/zipball/1ea674a8308baf547cbcbd30c5fcd6d301b7c000",
+                "reference": "1ea674a8308baf547cbcbd30c5fcd6d301b7c000",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^5.6.0|^7.0.0"
+            },
+            "require-dev": {
+                "dealerdirect/phpcodesniffer-composer-installer": "^0.4.3",
+                "phpcompatibility/php-compatibility": "^8.0",
+                "phpdocumentor/phpdocumentor": "2.*",
+                "phploc/phploc": "2.*",
+                "phpmd/phpmd": "2.*",
+                "phpunit/phpunit": "^4.8.35|^5.4.0",
+                "sebastian/phpcpd": "2.*",
+                "squizlabs/php_codesniffer": "^3.3.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Complex\\": "classes/src/"
+                },
+                "files": [
+                    "classes/src/functions/abs.php",
+                    "classes/src/functions/acos.php",
+                    "classes/src/functions/acosh.php",
+                    "classes/src/functions/acot.php",
+                    "classes/src/functions/acoth.php",
+                    "classes/src/functions/acsc.php",
+                    "classes/src/functions/acsch.php",
+                    "classes/src/functions/argument.php",
+                    "classes/src/functions/asec.php",
+                    "classes/src/functions/asech.php",
+                    "classes/src/functions/asin.php",
+                    "classes/src/functions/asinh.php",
+                    "classes/src/functions/atan.php",
+                    "classes/src/functions/atanh.php",
+                    "classes/src/functions/conjugate.php",
+                    "classes/src/functions/cos.php",
+                    "classes/src/functions/cosh.php",
+                    "classes/src/functions/cot.php",
+                    "classes/src/functions/coth.php",
+                    "classes/src/functions/csc.php",
+                    "classes/src/functions/csch.php",
+                    "classes/src/functions/exp.php",
+                    "classes/src/functions/inverse.php",
+                    "classes/src/functions/ln.php",
+                    "classes/src/functions/log2.php",
+                    "classes/src/functions/log10.php",
+                    "classes/src/functions/negative.php",
+                    "classes/src/functions/pow.php",
+                    "classes/src/functions/rho.php",
+                    "classes/src/functions/sec.php",
+                    "classes/src/functions/sech.php",
+                    "classes/src/functions/sin.php",
+                    "classes/src/functions/sinh.php",
+                    "classes/src/functions/sqrt.php",
+                    "classes/src/functions/tan.php",
+                    "classes/src/functions/tanh.php",
+                    "classes/src/functions/theta.php",
+                    "classes/src/operations/add.php",
+                    "classes/src/operations/subtract.php",
+                    "classes/src/operations/multiply.php",
+                    "classes/src/operations/divideby.php",
+                    "classes/src/operations/divideinto.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Mark Baker",
+                    "email": "mark@lange.demon.co.uk"
+                }
+            ],
+            "description": "PHP Class for working with complex numbers",
+            "homepage": "https://github.com/MarkBaker/PHPComplex",
+            "keywords": [
+                "complex",
+                "mathematics"
+            ],
+            "time": "2018-10-13 23:28:42"
+        },
+        {
             "name": "monolog/monolog",
             "version": "1.23.0",
             "source": {
@@ -1650,6 +2121,170 @@
                 "random"
             ],
             "time": "2018-07-02 15:55:56"
+        },
+        {
+            "name": "phenx/php-font-lib",
+            "version": "0.5.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/PhenX/php-font-lib.git",
+                "reference": "760148820110a1ae0936e5cc35851e25a938bc97"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/PhenX/php-font-lib/zipball/760148820110a1ae0936e5cc35851e25a938bc97",
+                "reference": "760148820110a1ae0936e5cc35851e25a938bc97",
+                "shasum": ""
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^4.8"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "FontLib\\": "src/FontLib"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "LGPL-3.0"
+            ],
+            "authors": [
+                {
+                    "name": "Fabien Ménager",
+                    "email": "fabien.menager@gmail.com"
+                }
+            ],
+            "description": "A library to read, parse, export and make subsets of different types of font files.",
+            "homepage": "https://github.com/PhenX/php-font-lib",
+            "time": "2017-09-13 16:14:37"
+        },
+        {
+            "name": "phenx/php-svg-lib",
+            "version": "v0.3.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/PhenX/php-svg-lib.git",
+                "reference": "ccc46ef6340d4b8a4a68047e68d8501ea961442c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/PhenX/php-svg-lib/zipball/ccc46ef6340d4b8a4a68047e68d8501ea961442c",
+                "reference": "ccc46ef6340d4b8a4a68047e68d8501ea961442c",
+                "shasum": ""
+            },
+            "require": {
+                "sabberworm/php-css-parser": "8.1.*"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~5.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Svg\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "LGPL-3.0"
+            ],
+            "authors": [
+                {
+                    "name": "Fabien Ménager",
+                    "email": "fabien.menager@gmail.com"
+                }
+            ],
+            "description": "A library to read, parse and export to PDF SVG files.",
+            "homepage": "https://github.com/PhenX/php-svg-lib",
+            "time": "2018-06-03 10:10:03"
+        },
+        {
+            "name": "phpoffice/phpspreadsheet",
+            "version": "1.5.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/PHPOffice/PhpSpreadsheet.git",
+                "reference": "2dfd06c59825914a1a325f2a2ed13634b9d8c411"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/PHPOffice/PhpSpreadsheet/zipball/2dfd06c59825914a1a325f2a2ed13634b9d8c411",
+                "reference": "2dfd06c59825914a1a325f2a2ed13634b9d8c411",
+                "shasum": ""
+            },
+            "require": {
+                "ext-ctype": "*",
+                "ext-dom": "*",
+                "ext-gd": "*",
+                "ext-iconv": "*",
+                "ext-libxml": "*",
+                "ext-mbstring": "*",
+                "ext-simplexml": "*",
+                "ext-xml": "*",
+                "ext-xmlreader": "*",
+                "ext-xmlwriter": "*",
+                "ext-zip": "*",
+                "ext-zlib": "*",
+                "markbaker/complex": "^1.4.1",
+                "php": "^5.6|^7.0",
+                "psr/simple-cache": "^1.0"
+            },
+            "require-dev": {
+                "dompdf/dompdf": "^0.8.0",
+                "friendsofphp/php-cs-fixer": "@stable",
+                "jpgraph/jpgraph": "^4.0",
+                "mpdf/mpdf": "^7.0.0",
+                "phpunit/phpunit": "^5.7",
+                "squizlabs/php_codesniffer": "^3.3",
+                "tecnickcom/tcpdf": "^6.2"
+            },
+            "suggest": {
+                "dompdf/dompdf": "Option for rendering PDF with PDF Writer",
+                "jpgraph/jpgraph": "Option for rendering charts, or including charts with PDF or HTML Writers",
+                "mpdf/mpdf": "Option for rendering PDF with PDF Writer",
+                "tecnickcom/tcpdf": "Option for rendering PDF with PDF Writer"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "PhpOffice\\PhpSpreadsheet\\": "src/PhpSpreadsheet"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "LGPL-2.1-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Maarten Balliauw",
+                    "homepage": "http://blog.maartenballiauw.be"
+                },
+                {
+                    "name": "Erik Tilt"
+                },
+                {
+                    "name": "Franck Lefevre",
+                    "homepage": "http://rootslabs.net"
+                },
+                {
+                    "name": "Mark Baker",
+                    "homepage": "http://markbakeruk.net"
+                }
+            ],
+            "description": "PHPSpreadsheet - Read, Create and Write Spreadsheet documents in PHP - Spreadsheet engine",
+            "homepage": "https://github.com/PHPOffice/PhpSpreadsheet",
+            "keywords": [
+                "OpenXML",
+                "excel",
+                "gnumeric",
+                "ods",
+                "php",
+                "spreadsheet",
+                "xls",
+                "xlsx"
+            ],
+            "time": "2018-10-21 10:04:54"
         },
         {
             "name": "prettus/l5-repository",
@@ -2053,6 +2688,50 @@
                 "uuid"
             ],
             "time": "2018-07-19 23:38:55"
+        },
+        {
+            "name": "sabberworm/php-css-parser",
+            "version": "8.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/sabberworm/PHP-CSS-Parser.git",
+                "reference": "850cbbcbe7fbb155387a151ea562897a67e242ef"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/sabberworm/PHP-CSS-Parser/zipball/850cbbcbe7fbb155387a151ea562897a67e242ef",
+                "reference": "850cbbcbe7fbb155387a151ea562897a67e242ef",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.2"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "*"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Sabberworm\\CSS": "lib/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Raphael Schweikert"
+                }
+            ],
+            "description": "Parser for CSS Files written in PHP",
+            "homepage": "http://www.sabberworm.com/blog/2010/6/10/php-css-parser",
+            "keywords": [
+                "css",
+                "parser",
+                "stylesheet"
+            ],
+            "time": "2016-07-19 19:14:21"
         },
         {
             "name": "swiftmailer/swiftmailer",
@@ -3092,6 +3771,67 @@
             "time": "2017-11-27 11:13:29"
         },
         {
+            "name": "uxweb/sweet-alert",
+            "version": "2.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/uxweb/sweet-alert.git",
+                "reference": "6d0335fc4658e6f4b29eea5bb824f9c7ef5262bb"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/uxweb/sweet-alert/zipball/6d0335fc4658e6f4b29eea5bb824f9c7ef5262bb",
+                "reference": "6d0335fc4658e6f4b29eea5bb824f9c7ef5262bb",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/session": "~5.0",
+                "illuminate/support": "~5.0",
+                "php": ">=7.0"
+            },
+            "require-dev": {
+                "mockery/mockery": "0.9.*",
+                "phpunit/phpunit": "^7.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "UxWeb\\SweetAlert\\SweetAlertServiceProvider"
+                    ],
+                    "aliases": {
+                        "Alert": "UxWeb\\SweetAlert\\SweetAlert"
+                    }
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "UxWeb\\SweetAlert\\": "src/SweetAlert/"
+                },
+                "files": [
+                    "src/SweetAlert/functions.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Uziel Bueno",
+                    "email": "ux.webs@gmail.com"
+                }
+            ],
+            "description": "A simple PHP package to show Sweet Alerts with the Laravel Framework",
+            "keywords": [
+                "alert",
+                "laravel",
+                "notifier",
+                "sweet"
+            ],
+            "time": "2018-07-24 06:20:52"
+        },
+        {
             "name": "vlucas/phpdotenv",
             "version": "v2.5.1",
             "source": {
@@ -3140,6 +3880,357 @@
                 "environment"
             ],
             "time": "2018-07-29 20:33:41"
+        },
+        {
+            "name": "webpatser/laravel-uuid",
+            "version": "3.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/webpatser/laravel-uuid.git",
+                "reference": "9c9bd4344f4aa78326b34a324d8a208e65c8221f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/webpatser/laravel-uuid/zipball/9c9bd4344f4aa78326b34a324d8a208e65c8221f",
+                "reference": "9c9bd4344f4aa78326b34a324d8a208e65c8221f",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.0"
+            },
+            "require-dev": {
+                "fzaninotto/faker": "~1.4",
+                "phpunit/phpunit": "~6.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Webpatser\\Uuid\\UuidServiceProvider"
+                    ],
+                    "aliases": {
+                        "Uuid": "Webpatser\\Uuid\\Uuid"
+                    }
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "Webpatser\\Uuid": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Christoph Kempen",
+                    "email": "christoph@downsized.nl"
+                }
+            ],
+            "description": "Class to generate a UUID according to the RFC 4122 standard. Support for version 1, 3, 4 and 5 UUID are built-in.",
+            "homepage": "https://github.com/webpatser/uuid",
+            "keywords": [
+                "UUID RFC4122"
+            ],
+            "time": "2017-09-03 23:32:05"
+        },
+        {
+            "name": "yajra/laravel-datatables",
+            "version": "v1.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/yajra/datatables.git",
+                "reference": "a5e2eaac3d7bc155502a37ab490cbcf0dee63e06"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/yajra/datatables/zipball/a5e2eaac3d7bc155502a37ab490cbcf0dee63e06",
+                "reference": "a5e2eaac3d7bc155502a37ab490cbcf0dee63e06",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.0",
+                "yajra/laravel-datatables-buttons": "3.*|4.*",
+                "yajra/laravel-datatables-fractal": "1.*",
+                "yajra/laravel-datatables-html": "3.*",
+                "yajra/laravel-datatables-oracle": "8.*"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0-dev"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Arjay Angeles",
+                    "email": "aqangeles@gmail.com"
+                }
+            ],
+            "description": "Laravel DataTables Complete Package.",
+            "keywords": [
+                "datatables",
+                "jquery",
+                "laravel"
+            ],
+            "time": "2018-08-15 12:31:12"
+        },
+        {
+            "name": "yajra/laravel-datatables-buttons",
+            "version": "v4.4.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/yajra/laravel-datatables-buttons.git",
+                "reference": "649f0f6c02b391e349cff3f186aa88b61fb0cdd0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/yajra/laravel-datatables-buttons/zipball/649f0f6c02b391e349cff3f186aa88b61fb0cdd0",
+                "reference": "649f0f6c02b391e349cff3f186aa88b61fb0cdd0",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/console": "^5.5",
+                "maatwebsite/excel": "^3.0",
+                "php": ">=7.0",
+                "yajra/laravel-datatables-html": "3.*",
+                "yajra/laravel-datatables-oracle": "8.*"
+            },
+            "require-dev": {
+                "mockery/mockery": "~1.0",
+                "phpunit/phpunit": "~7.0"
+            },
+            "suggest": {
+                "barryvdh/laravel-snappy": "Allows exporting of dataTable to PDF using the print view.",
+                "dompdf/dompdf": "Allows exporting of dataTable to PDF using the DomPDF."
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "4.0-dev"
+                },
+                "laravel": {
+                    "providers": [
+                        "Yajra\\DataTables\\ButtonsServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Yajra\\DataTables\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Arjay Angeles",
+                    "email": "aqangeles@gmail.com"
+                }
+            ],
+            "description": "Laravel DataTables Buttons Plugin.",
+            "keywords": [
+                "buttons",
+                "datatables",
+                "jquery",
+                "laravel"
+            ],
+            "time": "2018-10-06 02:23:34"
+        },
+        {
+            "name": "yajra/laravel-datatables-fractal",
+            "version": "v1.2.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/yajra/laravel-datatables-fractal.git",
+                "reference": "23804250ce32ddba216295ce47f713f551dba45c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/yajra/laravel-datatables-fractal/zipball/23804250ce32ddba216295ce47f713f551dba45c",
+                "reference": "23804250ce32ddba216295ce47f713f551dba45c",
+                "shasum": ""
+            },
+            "require": {
+                "league/fractal": "^0.17.0",
+                "php": ">=7.0",
+                "yajra/laravel-datatables-oracle": "8.*"
+            },
+            "require-dev": {
+                "mockery/mockery": "0.9.*",
+                "phpunit/phpunit": "~6.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0-dev"
+                },
+                "laravel": {
+                    "providers": [
+                        "Yajra\\DataTables\\FractalServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Yajra\\DataTables\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Arjay Angeles",
+                    "email": "aqangeles@gmail.com"
+                }
+            ],
+            "description": "Laravel DataTables Fractal Plugin.",
+            "keywords": [
+                "api",
+                "datatables",
+                "fractal",
+                "laravel"
+            ],
+            "time": "2018-06-12 06:23:13"
+        },
+        {
+            "name": "yajra/laravel-datatables-html",
+            "version": "v3.8.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/yajra/laravel-datatables-html.git",
+                "reference": "84a3b61e0ecba78108c55a508db150e8c8db2e59"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/yajra/laravel-datatables-html/zipball/84a3b61e0ecba78108c55a508db150e8c8db2e59",
+                "reference": "84a3b61e0ecba78108c55a508db150e8c8db2e59",
+                "shasum": ""
+            },
+            "require": {
+                "laravelcollective/html": "^5.4",
+                "php": ">=7.0",
+                "yajra/laravel-datatables-oracle": "8.*"
+            },
+            "require-dev": {
+                "mockery/mockery": "0.9.*",
+                "phpunit/phpunit": "~6.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "3.0-dev"
+                },
+                "laravel": {
+                    "providers": [
+                        "Yajra\\DataTables\\HtmlServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Yajra\\DataTables\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Arjay Angeles",
+                    "email": "aqangeles@gmail.com"
+                }
+            ],
+            "description": "Laravel DataTables HTML builder plugin for Laravel 5.4+.",
+            "keywords": [
+                "JS",
+                "datatables",
+                "html",
+                "jquery",
+                "laravel"
+            ],
+            "time": "2018-09-05 06:10:14"
+        },
+        {
+            "name": "yajra/laravel-datatables-oracle",
+            "version": "v8.9.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/yajra/laravel-datatables.git",
+                "reference": "851c4d4d307a66a4f8ab5c12444c1eb0104ecc80"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/yajra/laravel-datatables/zipball/851c4d4d307a66a4f8ab5c12444c1eb0104ecc80",
+                "reference": "851c4d4d307a66a4f8ab5c12444c1eb0104ecc80",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/database": "5.4.*|5.5.*|5.6.*|5.7.*",
+                "illuminate/filesystem": "5.4.*|5.5.*|5.6.*|5.7.*",
+                "illuminate/http": "5.4.*|5.5.*|5.6.*|5.7.*",
+                "illuminate/support": "5.4.*|5.5.*|5.6.*|5.7.*",
+                "illuminate/view": "5.4.*|5.5.*|5.6.*|5.7.*",
+                "php": ">=7.0"
+            },
+            "require-dev": {
+                "orchestra/testbench": "~3.5"
+            },
+            "suggest": {
+                "yajra/laravel-datatables-buttons": "Plugin for server-side exporting of dataTables.",
+                "yajra/laravel-datatables-editor": "Plugin to use DataTables Editor (requires a license).",
+                "yajra/laravel-datatables-fractal": "Plugin for server-side response using Fractal.",
+                "yajra/laravel-datatables-html": "Plugin for server-side HTML builder of dataTables."
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "8.0-dev"
+                },
+                "laravel": {
+                    "providers": [
+                        "Yajra\\DataTables\\DataTablesServiceProvider"
+                    ],
+                    "aliases": {
+                        "DataTables": "Yajra\\DataTables\\Facades\\DataTables"
+                    }
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Yajra\\DataTables\\": "src/"
+                },
+                "files": [
+                    "src/helper.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Arjay Angeles",
+                    "email": "aqangeles@gmail.com"
+                }
+            ],
+            "description": "jQuery DataTables API for Laravel 4|5",
+            "keywords": [
+                "datatables",
+                "jquery",
+                "laravel"
+            ],
+            "time": "2018-10-05 06:10:33"
         },
         {
             "name": "zircote/swagger-php",
@@ -4966,8 +6057,8 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
-        "infyomlabs/laravel-generator": 20,
         "infyomlabs/adminlte-templates": 20,
+        "infyomlabs/laravel-generator": 20,
         "infyomlabs/swagger-generator": 20,
         "jlapp/swaggervel": 20
     },
